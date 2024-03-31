@@ -87,3 +87,8 @@ def hard_drive_benchmark_2():
     write_chunk_size = 10000
     file_data = b'1' * file_size
 
+# Start timing
+    start_time = time.time()
+    
+    for i in range(0, file_size, read_chunk_size):
+        _ = file_data[i:i+read_chunk_size]
