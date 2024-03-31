@@ -12,3 +12,7 @@ def integer_operation_benchmark():
     
     for _ in range(2000000000):
         result = 1 / 1
+
+    execution_time = time.time() - start_time
+    
+    return execution_time
