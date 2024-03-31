@@ -70,3 +70,10 @@ def hard_drive_benchmark_1():
     for i in range(0, file_size, read_chunk_size):
         _ = file_data[i:i+read_chunk_size]
 
+
+
+    with open('test_file_1.bin', 'wb') as f:
+        for i in range(0, file_size, write_chunk_size):
+            f.write(file_data[i:i+write_chunk_size])
+
+
