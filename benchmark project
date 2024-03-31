@@ -48,4 +48,12 @@ def memory_benchmark():
     start_time = time.time()
     
     for i in range(array_size):
-        _ = array[i]
+        _ = array[I]
+
+    for i in range(array_size):
+        array[i] = 1
+    
+    execution_time = time.time() - start_time
+    
+    return execution_time
+
