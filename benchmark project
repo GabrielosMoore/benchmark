@@ -1,0 +1,8 @@
+import time
+
+# Benchmark 1: 32-bit Integer operation benchmark
+def integer_operation_benchmark():
+    start_time = time.time()
+    
+    for _ in range(1010):
+        result = 1 + 1
