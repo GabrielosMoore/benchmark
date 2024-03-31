@@ -35,3 +35,11 @@ def floating_point_operation_benchmark():
         result = 1.0 / 1.0
 
     execution_time = time.time() - start_time
+
+return execution_time
+
+# Benchmark 3: Memory benchmark
+def memory_benchmark():
+
+    array_size = 5000000000
+    array = [0] * array_size
