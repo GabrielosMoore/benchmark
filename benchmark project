@@ -80,3 +80,10 @@ def hard_drive_benchmark_1():
     
     return execution_time
 
+# Benchmark 5: Hard drive benchmark 2
+def hard_drive_benchmark_2():
+    file_size = 1000000000
+    read_chunk_size = 10000
+    write_chunk_size = 10000
+    file_data = b'1' * file_size
+
