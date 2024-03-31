@@ -57,3 +57,10 @@ def memory_benchmark():
     
     return execution_time
 
+# Benchmark 4: Hard drive benchmark 1
+def hard_drive_benchmark_1():
+    file_size = 1000000000
+    read_chunk_size = 100
+    write_chunk_size = 100
+    file_data = b'1' * file_size
+
