@@ -100,3 +100,13 @@ def hard_drive_benchmark_2():
     execution_time = time.time() - start_time
     
     return execution_time
+
+if __name__ == "__main__":
+    benchmarks = [
+        ("Integer operation benchmark", integer_operation_benchmark),
+        ("Floating point operation benchmark", floating_point_operation_benchmark),
+        ("Memory benchmark", memory_benchmark),
+        ("Hard drive benchmark 1", hard_drive_benchmark_1),
+        ("Hard drive benchmark 2", hard_drive_benchmark_2)
+    ]
+
