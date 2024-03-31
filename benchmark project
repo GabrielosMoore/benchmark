@@ -6,3 +6,9 @@ def integer_operation_benchmark():
     
     for _ in range(1010):
         result = 1 + 1
+
+    for _ in range(5000000000):
+        result = 1 * 1
+    
+    for _ in range(2000000000):
+        result = 1 / 1
