@@ -110,3 +110,6 @@ if __name__ == "__main__":
         ("Hard drive benchmark 2", hard_drive_benchmark_2)
     ]
 
+    for name, benchmark_func in benchmarks:
+        execution_time = benchmark_func()
+        print(f"{name}: {execution_time} seconds")
