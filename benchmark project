@@ -16,3 +16,20 @@ def integer_operation_benchmark():
     execution_time = time.time() - start_time
     
     return execution_time
+
+# Benchmark 2: 64-bit Floating point operation benchmark
+def floating_point_operation_benchmark():
+    # Start timing
+    start_time = time.time()
+    
+    # 1010 additions
+    for _ in range(1010):
+        result = 1.0 + 1.0
+    
+    # 5 × 10^9 multiplication
+    for _ in range(5000000000):
+        result = 1.0 * 1.0
+    
+    # 2 × 10^9 division
+    for _ in range(2000000000):
+        result = 1.0 / 1.0
