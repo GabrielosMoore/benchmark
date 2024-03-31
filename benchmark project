@@ -43,3 +43,9 @@ def memory_benchmark():
 
     array_size = 5000000000
     array = [0] * array_size
+
+# Start timing
+    start_time = time.time()
+    
+    for i in range(array_size):
+        _ = array[i]
