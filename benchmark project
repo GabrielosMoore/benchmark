@@ -33,3 +33,5 @@ def floating_point_operation_benchmark():
     # 2 × 10^9 division
     for _ in range(2000000000):
         result = 1.0 / 1.0
+
+    execution_time = time.time() - start_time
